@@ -59,7 +59,7 @@ export default function ReviewPage() {
     return (
       <main className="min-h-screen bg-gray-50 px-6 py-12">
         <div className="mx-auto max-w-4xl rounded-3xl border bg-white p-8 shadow-sm">
-          <h1 className="text-3xl font-bold">Review Dashboard</h1>
+          <h1 className="text-3xl font-bold text-gray-900">Review Dashboard</h1>
           <p className="mt-3 text-gray-600">
             No review data found yet. Start an intake first.
           </p>
@@ -72,7 +72,7 @@ export default function ReviewPage() {
     <main className="min-h-screen bg-gray-50 px-6 py-12">
       <div className="mx-auto max-w-6xl space-y-6">
         <div className="rounded-3xl border bg-white p-8 shadow-sm">
-          <h1 className="text-3xl font-bold">Review Dashboard</h1>
+          <h1 className="text-3xl font-bold text-gray-900">Review Dashboard</h1>
           <p className="mt-2 text-gray-600">
             Structured intake output, scoring, routing, and follow-up drafts.
           </p>
@@ -87,78 +87,78 @@ export default function ReviewPage() {
 
         <div className="grid gap-6 lg:grid-cols-2">
           <div className="rounded-2xl border bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-semibold">Original Issue</h2>
+            <h2 className="text-xl font-semibold text-gray-900">Original Issue</h2>
             <p className="mt-3 whitespace-pre-wrap text-gray-700">{data.initialIssue}</p>
           </div>
 
           <div className="rounded-2xl border bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-semibold">Summary</h2>
+            <h2 className="text-xl font-semibold text-gray-900">Summary</h2>
             <p className="mt-3 whitespace-pre-wrap text-gray-700">{data.record.summary}</p>
           </div>
         </div>
 
         <div className="rounded-2xl border bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-semibold">Case Snapshot</h2>
+          <h2 className="text-xl font-semibold text-gray-900">Case Snapshot</h2>
           <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             <div className="rounded-xl bg-gray-50 p-4">
               <div className="text-sm text-gray-500">Practice Area</div>
-              <div className="mt-1 font-semibold">
+              <div className="mt-1 font-semibold text-gray-900">
                 {formatFallback(data.record.practice_area)}
               </div>
             </div>
 
             <div className="rounded-xl bg-gray-50 p-4">
               <div className="text-sm text-gray-500">Jurisdiction</div>
-              <div className="mt-1 font-semibold">
+              <div className="mt-1 font-semibold text-gray-900">
                 {formatFallback(data.record.jurisdiction)}
               </div>
             </div>
 
             <div className="rounded-xl bg-gray-50 p-4">
               <div className="text-sm text-gray-500">Incident Date</div>
-              <div className="mt-1 font-semibold">
+              <div className="mt-1 font-semibold text-gray-900">
                 {formatFallback(data.record.incident_date)}
               </div>
             </div>
 
             <div className="rounded-xl bg-gray-50 p-4">
               <div className="text-sm text-gray-500">Urgency</div>
-              <div className="mt-1 font-semibold">
+              <div className="mt-1 font-semibold text-gray-900">
                 {formatFallback(data.record.urgency)}
               </div>
             </div>
 
             <div className="rounded-xl bg-gray-50 p-4">
               <div className="text-sm text-gray-500">Represented</div>
-              <div className="mt-1 font-semibold">
+              <div className="mt-1 font-semibold text-gray-900">
                 {formatFallback(data.record.represented)}
               </div>
             </div>
 
             <div className="rounded-xl bg-gray-50 p-4">
               <div className="text-sm text-gray-500">Contact Preference</div>
-              <div className="mt-1 font-semibold">
+              <div className="mt-1 font-semibold text-gray-900">
                 {formatFallback(data.record.contact_preference)}
               </div>
             </div>
 
             <div className="rounded-xl bg-gray-50 p-4 md:col-span-2 lg:col-span-3">
               <div className="text-sm text-gray-500">Damages / Harm</div>
-              <div className="mt-1 font-semibold">
+              <div className="mt-1 font-semibold text-gray-900">
                 {formatFallback(data.record.damages_or_harm)}
               </div>
             </div>
 
             <div className="rounded-xl bg-gray-50 p-4 md:col-span-2 lg:col-span-3">
               <div className="text-sm text-gray-500">Deadline Risk</div>
-              <div className="mt-1 font-semibold">
+              <div className="mt-1 font-semibold text-gray-900">
                 {formatFallback(data.record.deadline_risk)}
               </div>
             </div>
 
             <div className="rounded-xl bg-gray-50 p-4 md:col-span-2 lg:col-span-3">
               <div className="text-sm text-gray-500">Missing Info</div>
-              <div className="mt-1 font-semibold">
+              <div className="mt-1 font-semibold text-gray-900">
                 {data.record.missing_info.length > 0
                   ? data.record.missing_info.join(", ")
                   : "None"}
@@ -169,11 +169,11 @@ export default function ReviewPage() {
 
         <div className="grid gap-6 lg:grid-cols-2">
           <div className="rounded-2xl border bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-semibold">Routing Decision</h2>
+            <h2 className="text-xl font-semibold text-gray-900">Routing Decision</h2>
             <div className="mt-4 space-y-4">
               <div className="rounded-xl bg-gray-50 p-4">
                 <div className="text-sm text-gray-500">Assigned Queue</div>
-                <div className="mt-1 font-semibold">
+                <div className="mt-1 font-semibold text-gray-900">
                   {formatRouteLabel(data.score.route_to)}
                 </div>
               </div>
@@ -185,11 +185,11 @@ export default function ReviewPage() {
           </div>
 
           <div className="rounded-2xl border bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-semibold">Follow-up Transcript</h2>
+            <h2 className="text-xl font-semibold text-gray-900">Follow-up Transcript</h2>
             <div className="mt-4 space-y-4">
               {data.questions.map((q, i) => (
                 <div key={`${q}-${i}`} className="rounded-xl bg-gray-50 p-4">
-                  <div className="font-medium">Q: {q}</div>
+                  <div className="font-medium text-gray-900">Q: {q}</div>
                   <div className="mt-2 text-gray-700">A: {data.answers[i] || "-"}</div>
                 </div>
               ))}
@@ -199,21 +199,21 @@ export default function ReviewPage() {
 
         <div className="grid gap-6 lg:grid-cols-3">
           <div className="rounded-2xl border bg-white p-6 shadow-sm">
-            <h3 className="text-lg font-semibold">Internal Note</h3>
+            <h3 className="text-lg font-semibold text-gray-900">Internal Note</h3>
             <p className="mt-3 whitespace-pre-wrap text-gray-700">
               {data.followup.internal_note}
             </p>
           </div>
 
           <div className="rounded-2xl border bg-white p-6 shadow-sm">
-            <h3 className="text-lg font-semibold">SMS Draft</h3>
+            <h3 className="text-lg font-semibold text-gray-900">SMS Draft</h3>
             <p className="mt-3 whitespace-pre-wrap text-gray-700">
               {data.followup.sms}
             </p>
           </div>
 
           <div className="rounded-2xl border bg-white p-6 shadow-sm">
-            <h3 className="text-lg font-semibold">Email Draft</h3>
+            <h3 className="text-lg font-semibold text-gray-900">Email Draft</h3>
             <p className="mt-3 whitespace-pre-wrap text-gray-700">
               {data.followup.email}
             </p>
