@@ -4,6 +4,10 @@ MoJo Intake is a lightweight AI-powered legal intake demo built to show how unst
 
 The app collects a prospective client’s issue, asks targeted follow-up questions, extracts key case facts into structured data, scores the lead, routes it to the appropriate intake queue, and drafts follow-up communications for staff and client outreach.
 
+## Notes
+
+This project is for intake and routing support only. It does not provide legal advice.
+
 ## Why this project exists
 
 This project was built to demonstrate applied AI orchestration in a real business workflow.
