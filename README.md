@@ -52,10 +52,10 @@ The review dashboard presents both:
 ## Example workflow
 
 1. A prospective client enters:
-   - “I was rear-ended two weeks ago in New Jersey. My shoulder has been hurting since then and I missed several days of work.”
+   - “I was rear-ended about two weeks ago in New Jersey. My shoulder has been hurting since then and I missed several days of work. The insurance company keeps calling me, and I am not sure what to do.”
 2. The app asks targeted follow-up questions
 3. The answers are converted into a structured intake record
-4. The lead is scored and routed, for example to:
+4. The lead is scored and routed, for example, to:
    - `Personal Injury Queue`
 5. The app produces:
    - a concise summary
